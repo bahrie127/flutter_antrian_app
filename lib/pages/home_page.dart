@@ -64,14 +64,14 @@ class _HomePageState extends State<HomePage> {
                         noAntrian:
                             '${listAntrian[index].noAntrian.split('-').first}-${int.parse(noAntrian) + 1}',
                       );
+
+                      AntrianLocalDatasource.instance.updateAntrian(newAntrian);
+                      getAntrian();
                       final printValue =
                           await AntrianPrint.instance.printAntrian(
                         newAntrian,
                       );
                       await PrintBluetoothThermal.writeBytes(printValue);
-
-                      AntrianLocalDatasource.instance.updateAntrian(newAntrian);
-                      getAntrian();
                     },
                     child: Card(
                       //border radius
