@@ -28,15 +28,15 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  audio_plus: ^0.0.4
+  audio_plus: ^1.0.3
   cupertino_icons: ^1.0.6
   esc_pos_utils_plus: ^2.0.3
   flutter:
     sdk: flutter
   image: ^4.2.0
-  intl: ^0.19.0
+  intl: ^0.20.2
   permission_handler: ^11.3.1
-  print_bluetooth_thermal: ^1.1.0
+  print_bluetooth_thermal: ^1.1.5
   sqflite: ^2.3.3+1
 
 dev_dependencies:
@@ -46,7 +46,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^3.0.0
+  flutter_lints: ^5.0.0
   flutter_test:
     sdk: flutter
 
